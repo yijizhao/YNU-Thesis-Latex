@@ -1,0 +1,74 @@
+%% =======================================================
+%% 云南大学学位论文模板 (YNU-thesis)
+%% =======================================================
+%% Author: 赵苡积 (Dr. Zhao Yiji)
+%% Institution: 云南大学 (Yunnan University)
+%% Version: V1.0
+%% =======================================================
+%% 编译引擎: XeLaTeX (推荐)
+%% =======================================================
+%% type  选项: Bachelor (学士), Master (硕士), Doctor (博士)
+%% print 选项: twoside (双面打印), oneside (单面打印)
+%% =======================================================
+\documentclass[type=Bachelor, print=twoside]{style/YNU-thesis}
+
+%% 指定图片路径
+\graphicspath{{./figures/}}
+
+%%%%%%%%%%%%%%%%% 填写封面信息 %%%%%%%%%%%%%%%%%%%%%%%%
+\title{YNUThesis：云南大学本科毕业论文\\ \LaTeX 模板——示例文档}
+\author{姓名}
+\studentNumber{学号}
+\college{信息学院}
+\major{计算机科学与技术（卓越工程师）}
+\advisor{指导教师（职称）}
+\advisorTitle{教授}
+\datetime{2026 年 5 月 10 日}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	\makecover                             %封面
+	\include{chapters/statement}           %版权声明
+
+	\frontmatter                           %页脚用罗马体
+	\include{chapters/abstract_chinese}    %中文摘要
+	\include{chapters/abstract_english}    %英文摘要
+	\tableofcontents                       %目录
+
+        %正文
+        \mainmatter                     %正文页脚用阿拉伯数字
+        \include{chapters/chapter01}    %第一章
+	\include{chapters/chapter02}    %第二章
+	\include{chapters/chapter03}    %第三章
+	\include{chapters/chapter04}    %第四章
+	\include{chapters/chapter05}    %第五章
+	\include{chapters/chapter_conclusion}    %总结与展望
+
+
+	%参考文献
+	\bibliography{ref}
+        \include{chapters/thanks}       %致谢
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

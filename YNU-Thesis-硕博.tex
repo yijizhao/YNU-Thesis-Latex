@@ -1,0 +1,85 @@
+%% =======================================================
+%% 云南大学学位论文模板 (YNU-thesis)
+%% =======================================================
+%% Author: 赵苡积 (Dr. Zhao Yiji)
+%% Institution: 云南大学 (Yunnan University)
+%% Version: V1.0
+%% =======================================================
+%% 编译引擎: XeLaTeX (推荐)
+%% =======================================================
+%% type  选项: Bachelor (学士), Master (硕士), Doctor (博士)
+%% print 选项: twoside (双面打印), oneside (单面打印)
+%% =======================================================
+\documentclass[type=Master, print=twoside]{style/YNU-thesis}
+
+%% 指定图片路径
+\graphicspath{{./figures/}}
+
+
+%%%%%%%%%%%%%%%%% 填写封面信息 %%%%%%%%%%%%%%%%%%%%%%%%
+% 硕博专属参数
+\clc{}               % 分类号
+\secretLevel{公开}    % 密级
+\udc{}               % UDC
+\serialNumber{}      % 编号
+
+
+\title{YNUThesis：云南大学硕/博士学位论文\\ \LaTeX 模板——示例文档} %标题：长题目可用 \\ 手工分行
+\englishtitle{YNUThesis: LaTeX Template for \\Yunnan University Master's and Doctoral \\Dissertations —— Sample Document}
+\author{张三}
+\studentNumber{2026100123}
+\college{信息学院}
+\major{计算机技术}
+\researchArea{数据与知识工程}
+\advisor{李四}
+\advisorTitle{教授}
+\datetime{2026 年 6 月}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	\makecover                             %封面
+        \makereviewtable                       %简况表（本科无需填写）
+	\include{chapters/statement}           %版权声明
+	\frontmatter                           %摘要开始页脚用罗马体
+	\include{chapters/abstract_chinese}    %中文摘要
+	\include{chapters/abstract_english}    %英文摘要
+	\tableofcontents                       %目录
+
+        %正文
+        \mainmatter                     %正文开始页脚用阿拉伯数字
+        \include{chapters/chapter01}    %第一章
+	\include{chapters/chapter02}    %第二章
+	\include{chapters/chapter03}    %第三章
+	\include{chapters/chapter04}    %第四章
+	\include{chapters/chapter05}    %第五章
+	\include{chapters/chapter_conclusion}    %总结与展望
+
+
+	%参考文献
+	\bibliography{ref}
+	\include{chapters/mresume}      %作者简历（本科无需填写）
+        \include{chapters/thanks}       %致谢
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
