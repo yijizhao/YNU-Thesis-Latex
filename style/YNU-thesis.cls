@@ -167,9 +167,9 @@
 \addtocontents{lot}{\protect\hypersetup{hidelinks}}
 \addtocontents{lof}{\protect\hypersetup{hidelinks}}
 
-\renewcommand\theequation{\arabic{chapter}-\arabic{equation}}
-\renewcommand\thefigure{\arabic{chapter}-\arabic{figure}}
-\renewcommand\thetable{\arabic{chapter}-\arabic{table}}
+\renewcommand\theequation{\arabic{chapter}.\arabic{equation}}
+\renewcommand\thefigure{\arabic{chapter}.\arabic{figure}}
+\renewcommand\thetable{\arabic{chapter}.\arabic{table}}
 \numberwithin{table}{chapter}
 
 \DeclareCaptionLabelSeparator{zhspace}{\hspace{1\ccwd}}
