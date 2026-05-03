@@ -654,6 +654,15 @@
     \addcontentsline{toc}{chapter}{作者简历及研究成果}
 }{}
 
+\newenvironment{conclusion}{
+    \chapter*{结论}
+    \thispagestyle{YNU@heading}
+    % 设置页眉显示内容
+    \markboth{结论}{结论}
+    % 写入目录，并使用 \texorpdfstring 避免书签警告
+    \addcontentsline{toc}{chapter}{\texorpdfstring{结论}{结论}}
+}{}
+
 \renewenvironment{thanks}{
 \chapter*{致\quad 谢}
 \thispagestyle{YNU@heading}
