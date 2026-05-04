@@ -156,7 +156,7 @@
 \RequirePackage[
     top=2.5cm, bottom=2.75cm,
     left=3.0cm, right=2.0cm,
-    headheight=16pt, headsep=11pt, footskip=33pt
+    headheight=16pt, headsep=17.6pt, footskip=33pt
 ]{geometry}
 
 % 全局行距设置
@@ -190,7 +190,7 @@
         aftername = {\hspace{0.5\ccwd}},
         format = {\zihao{3}\heiti\centering}, 
         pagestyle = {YNU@heading},
-        beforeskip = 17.6bp, 
+        beforeskip = 0bp, %段前0.8应该为17.6bp，在页眉部分设置了17.6bp。
         afterskip = 11bp, 
         fixskip = true,  %严格锁定，不让其自动浮动
     }
