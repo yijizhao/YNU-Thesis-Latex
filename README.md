@@ -29,4 +29,6 @@
 
 2026.05.03 针对本科毕设模板，优化封面中的学号/姓名顺序，增加了conclusion环境。下载YNU-thesis.cls、conclusion_bachelor.tex、YNU-Thesis-本科.tex替换即可。
 
+2026.05.04 针对本科毕设模板，修正一级标题行距。下载YNU-thesis.cls替换即可。
+
 > 欢迎使用并提出维护需求~ QQ/WeChat:452229768
