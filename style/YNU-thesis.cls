@@ -171,6 +171,9 @@
 \renewcommand\thefigure{\arabic{chapter}.\arabic{figure}}
 \renewcommand\thetable{\arabic{chapter}.\arabic{table}}
 \numberwithin{table}{chapter}
+% 算法编号规则：强制按章节编号，且格式与图表保持一致 (如 算法 3.1)
+\numberwithin{algocf}{chapter}
+\renewcommand{\thealgocf}{\arabic{chapter}.\arabic{algocf}}
 
 \DeclareCaptionLabelSeparator{zhspace}{\hspace{1\ccwd}}
 \DeclareCaptionFont{captionfont}{\heiti\zihao{-4}}
@@ -729,9 +732,7 @@
 \SetKwInput{KwOut}{输出}
 \SetAlgoCaptionSeparator{ ：}
 
-% 1. 修复编号规则：强制按章节编号，且格式与图表保持一致 (如 算法 3-1)
-\numberwithin{algocf}{chapter}
-\renewcommand{\thealgocf}{\arabic{chapter}-\arabic{algocf}}
+
 
 % 2. 彻底解决右侧留白：引入宽度参数的居中算法环境
 % 用法：\begin{centeralgo}[浮动位置]{算法宽度}
